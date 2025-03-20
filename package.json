@@ -1,8 +1,10 @@
-{
+"scripts": {
+    "start": "node file1.js & node file2.js & node file3.js"
+  },
   "dependencies": {
     "body-parser": "^1.20.3",
     "express": "^4.21.2",
     "mysql": "^2.18.1",
     "node": "^20.19.0"
   }
-}
+
