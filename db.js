@@ -6,7 +6,7 @@ require('dotenv').config(); // Load environment variables
   host: '127.0.0.1',
     user: 'root',
     password: '',
-    database: 
+    database: 'Student'
 });
 
 con.connect((err) => {
