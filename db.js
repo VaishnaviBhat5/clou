@@ -1,10 +1,13 @@
 //Filename:db.js
+
 const mysql = require('mysql');
+require('dotenv').config(); // Load environment variables
 
 const con = mysql.createConnection({
-    host: '127.0.0.1',
-    user: 'root',
-    password: ''
+    host: process.env.MYSQL_HOST,
+    user: process.env.MYSQL_USER,
+    password: process.env.MYSQL_PASSWORD,
+    database: process.env.MYSQL_DATABASE
 });
 
 con.connect((err) => {
